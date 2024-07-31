@@ -2,13 +2,12 @@
 
 <!-- Title -->
 <div align="center">
-<h3 align="center">Secure GUI Chat App</h3>
+<h3 align="center">Traffic Light System</h3>
 
   <p align="center">
-    A simple chat application that encrypts traffic through DHE
+    A single lane traffic simulation using FreeRTOS & STM32F405 MCU
   </p>
 </div>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -16,19 +15,23 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#overview">Overview</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#design-solution">Design Solution</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prv-setup">PRV Setup</a></li>
+        <li><a href="#task-1">Task 1</a></li>
+        <li><a href="#task-2">Task 2</a></li>
+        <li><a href="#task-3">Task 3</a></li>
+        <li><a href="#task-4">Task 4</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#discussion">Discussion</a></li>
+    <li><a href="#limitation-and-potential-improvements">Limitations & Potential Improvements</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -52,7 +55,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
+<!-- DESIGN SOLUTION -->
 ## Design Solution
 
 ### PRV Setup
@@ -69,7 +72,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- USAGE EXAMPLES -->
+<!-- Discussion -->
 ## Discussion
 
 
