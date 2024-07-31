@@ -31,7 +31,7 @@
       </ul>
     </li>
     <li><a href="#discussion">Discussion</a></li>
-    <li><a href="#limitation-&-potential-improvements">Limitations & Potential Improvements</a></li>
+    <li><a href="#limitation-and-potential-improvements">Limitations and Potential Improvements</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -79,7 +79,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIMITATIONS & POTENTIAL IMPROVEMENTS -->
-## Limitations & Potential Improvements
+## Limitations and Potential Improvements
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
