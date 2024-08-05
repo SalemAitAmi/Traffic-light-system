@@ -101,7 +101,7 @@ The `trafficFlowAdjustmentTask` reads values from the ADC's buffer which is itse
 
 ### Circuit Diagram
 
-![cicruit-diagram]
+![circuit-diagram]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
