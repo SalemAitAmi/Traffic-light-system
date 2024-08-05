@@ -76,7 +76,7 @@ The first function called in main `prvSetupHardware` configures hardware paramet
 ### PRV Setup
 
 This function initializes, configures, and starts all of the hardware interfaces used by the program.
-[prv]
+![prv]
 
 ### Task 1
 
@@ -120,7 +120,8 @@ Salem Ait Ami - [LinkedIn](https://www.linkedin.com/in/salemaitami/) - [salemait
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [breadboard]: images/breadboard.png
-[prv]: images/prv.png
+[circuit-diagram]: images/circuit_diagram.png
+[prv]: images/prv_setup_hardware.png
 [includes]: images/includes.png
 [main]: images/maintls.png
 [task1]: images/task1.png
