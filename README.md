@@ -68,10 +68,10 @@ The program uses few standard libraries, including `stdint.h` for exact-width in
 The files, `stm32f4_discovery.h` and `stm32f4xx.h`, are included for configuration purposes for FreeRTOS to determine the STM32F4xx device used in the target application and whether to use periphal drivers or not.
 Lastly, the files `FreeRTOS.h`, `queue.h`, `semphr.h`, `task.h`. and `timers.h` are included to enable access to the queue, semophore, task, and timer APIs respectively. 
 Function prototypes are used to make the functions visible to main alongside defines for traffic light states and global queue handles. 
-![Includes Screen Shot][includes]
+![includes]
 
 The first function called in main `prvSetupHardware` configures hardware parameters and initializes the GPIO pins used by the system. Then 3 queues are initialized with a size of 1 and added to the registry for debuging purposes. The `carQueue` is loaded with either 0 or 1 and determines if a new car should be added at the end of the traffic flow. The `trafficLightQueue` is loaded with the current state of the traffic light and is used to synchronize light changes. The `adcQueue` is loaded with an integer value between 0 to 6 that determines the intensity of traffic and the interval between light changes. Lastly, Task handles are initialized with the same priority and the scheduler is started.
-[main]
+![main]
 
 ### PRV Setup
 
@@ -80,18 +80,28 @@ This function initializes, configures, and starts all of the hardware interfaces
 
 ### Task 1
 
-The `trafficFlowAdjustmentTask` reads values from the ADC's buffer which is itself receiving voltage from the potentiometer. 
+The `trafficFlowAdjustmentTask` reads values from the ADC's buffer which is itself receiving voltage from the potentiometer.
+![task1]
 
 ### Task 2
 
+![task2]
+
 ### Task 3
+
+![task3]
 
 ### Task 4
 
+![task4]
+
 ### Breadboard
+
+![breadboard]
 
 ### Circuit Diagram
 
+![cicruit-diagram]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
