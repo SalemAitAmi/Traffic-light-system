@@ -109,12 +109,28 @@ The `trafficFlowAdjustmentTask` reads values from the ADC's buffer which is itse
 <!-- DISCUSSION -->
 ## Discussion
 
+The Traffic Light System project effectively demonstrates the use of FreeRTOS to manage multiple concurrent tasks in an embedded system. By leveraging the STM32F405 microcontroller's capabilities and the FreeRTOS task management features, this project simulates a real-world traffic light control system.
+
+The project is divided into four main tasks: traffic flow adjustment, traffic generation, traffic light state management, and system display. Each task is responsible for a specific aspect of the traffic system, and they communicate with each other using message queues. This modular approach makes the system easier to understand, debug, and extend.
+
+The hardware setup, which includes the potentiometer, LEDs, and shift registers, provides a hands-on demonstration of how embedded systems can interact with the physical world. The potentiometer allows for dynamic adjustment of traffic intensity, showcasing how input from the real world can influence the system's behavior in real-time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIMITATIONS & POTENTIAL IMPROVEMENTS -->
 ## Limitations and Potential Improvements
 
+- **Queue Sizes:** The current implementation uses queues with a size of 1. This might lead to data loss if tasks attempt to write to a full queue. Increasing the queue sizes could help mitigate this issue.
+
+- **Fixed Delays:** The tasks use fixed delays (vTaskDelay) to simulate real-time operation. However, this can lead to non-deterministic behavior if the system becomes overloaded. Implementing more sophisticated timing mechanisms or using hardware timers could improve accuracy.
+
+- **Scalability:** The system is designed for a single-lane traffic intersection. Extending it to handle multiple lanes or more complex traffic scenarios would require significant changes to the task logic and inter-task communication.
+
+- **Error Handling:** Currently, there is minimal error handling. Adding mechanisms to detect and respond to hardware failures, task overruns, or communication errors would increase system robustness.
+
+- **Energy Consumption:** Continuous ADC conversions and high-frequency task switching may lead to higher power consumption. Implementing power-saving modes and optimizing task scheduling could make the system more energy-efficient.
+
+- **Physical Interface:** The breadboard setup, while useful for prototyping, is not ideal for a final product. Designing a printed circuit board (PCB) and creating a more permanent physical setup would improve the system's reliability and durability.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
